@@ -27,7 +27,7 @@ for(let i = 0; i < arreglo.length; i++){
 }
 //C:
 arreglo.forEach(function(element){
-       console.log(element); 
+    console.log(element); 
 });
 //D:
 for(let i= 0; i < arreglo.length; i++){
@@ -84,7 +84,7 @@ const ordenados = nombres.sort();
 console.log(ordenados);
 
 //D
-const iniciales = nombre.map(function(nombre){
+const iniciales = nombres.map(function(nombre){
     return nombre.charAt(0);
 });
 console.log(iniciales);
@@ -96,3 +96,49 @@ console.log(Mayusculas);
 //G:
 const nombresConJ = nombres.some(nombre => nombre.charAt(0) ===  "J");
 console.log(nombresConJ);
+
+//EJERCICIO 6 
+function promptColores() {
+    const colores = ["azul", "amarillo", "rojo", "verde", "café", "rosa"];
+    let colorUsuario = prompt('Introduzca un color para determinar su validez').toLowerCase();
+
+    if (colores.includes(colorUsuario)) {
+        alert('El color es valido');
+    }else{
+        alert('El color no se encontró dentro');
+    }
+}
+
+//EJERCICIO 7
+function numerosPares(arreglo) {
+    arreglo = [];
+    arreglo.filter( value => value % 2 === 0);
+}
+
+//EJERCICIO 8
+function arregloPorVocales(arreglo) {
+    const vocales = ['a','e','i','o','u'];
+    arreglo.filter(value => vocales.includes(letra[0].toLowerCase()))
+}
+
+//EJERCICIO 9
+
+
+//EJERCICIO 10
+function cambiarFondo(tabla) {
+    if (tabla.style.backgroundColor === "green") {
+        tabla.style.backgroundColor = "";
+    } else {
+        tabla.style.backgroundColor = "green";
+    }
+}
+
+//EJERCICIO 11
+
+const elementos = document.querySelectorAll('li');
+
+elementos.forEach((e) =>{
+    e.addEventListener('click', () => {
+        e.style.display = 'none'
+    });
+});
