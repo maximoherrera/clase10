@@ -43,3 +43,45 @@ td {
     cursor: pointer;
     width: 10rem;
 }
+
+/* // Ejercicio 12 */
+.tabla {
+    display: table;
+    border-collapse: collapse;
+    margin:auto;
+  }
+  
+  .columna {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  .fila1 {
+    background-color: #edeaea;
+  }
+  
+  .fila2 {
+    background-color: #d3d0d0;
+  }
+  
+  .fila3 {
+    background-color: #cccccc;
+  }
+  
+  .fila1:hover,
+  .fila2:hover,
+  .fila3:hover {
+    background-color: rgb(214, 214, 204);
+  }
+
+  /* Ejercicio 13 */
+  .noticia {
+    margin-bottom: 20px;
+  }
+  
+  .resaltado {
+    background-color: yellow;
+  }
+  
+  

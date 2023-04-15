@@ -122,6 +122,18 @@ function arregloPorVocales(arreglo) {
 }
 
 //EJERCICIO 9
+let numeros1 = [1, 2, 3, 4, 5];
+
+function intercambionumeros(arreglo, indice1, indice2) {
+  let temp = arreglo[indice1];
+  arreglo[indice1] = arreglo[indice2];
+  arreglo[indice2] = temp;
+}
+
+console.log("primer orden de numeros: " + numeros1);
+intercambionumeros(numeros1, 1, 3);
+console.log("orden despues del cambio: " + numeros1);
+
 
 
 //EJERCICIO 10
@@ -142,3 +154,79 @@ elementos.forEach((e) =>{
         e.style.display = 'none'
     });
 });
+
+//EJERCICIO 12
+const filas = document.querySelectorAll('.tabla div');
+
+filas.forEach(fila => {
+  fila.addEventListener('click', () => {
+    fila.classList.toggle('seleccionada');
+  });
+});
+
+// EJERCICIO 13
+function aumentarfuente() {
+    const noticias = document.getElementsByClassName("noticia");
+    for (let i = 0; i < noticias.length; i++) {
+      noticias[i].style.fontSize = "larger";
+    }
+  }
+  
+  function fuentechica() {
+    const noticias = document.getElementsByClassName("noticia");
+    for (let i = 0; i < noticias.length; i++) {
+      noticias[i].style.fontSize = "smaller";
+    }
+  }
+  
+  function resaltar() {
+    const noticias = document.getElementsByClassName("noticia");
+    for (let i = 0; i < noticias.length; i++) {
+      noticias[i].classList.toggle("resaltado");
+    }
+  }
+
+  // EJERCICIO 14
+  function cambiarcontenido() {
+    const tabla = document.getElementById("tabla1");
+    const celdas = tabla.getElementsByTagName("td");
+    for (let i = 0; i < celdas.length; i++) {
+      celdas[i].textContent = "-";
+    }
+  }
+  
+  // EJERCICIO 15
+  function cambiarhipervinculo(url) {
+    const hipervinculo = document.getElementById('hipervinculo');
+    hipervinculo.href = url;
+    hipervinculo.textContent = url;
+  }
+
+  // EJERCICIO 16
+  const pnegritas = document.querySelectorAll('strong');
+
+pnegritas.forEach(palabra => {
+  palabra.addEventListener('click', () => {
+    palabra.style.display = 'none';
+  });
+});
+
+// EJERCICIO 17
+const casilla1 = document.getElementById("casilla1");
+casilla1.addEventListener("mouseover", function() {
+  this.style.backgroundColor = "blue";
+});
+const casilla2 = document.getElementById("casilla2");
+casilla2.addEventListener("mouseover", function() {
+  this.style.backgroundColor = "blue";
+});
+const casilla3 = document.getElementById("casilla3");
+casilla3.addEventListener("mouseover", function() {
+  this.style.backgroundColor = "blue";
+});
+const casilla4 = document.getElementById("casilla4");
+casilla4.addEventListener("mouseover", function() {
+  this.style.backgroundColor = "blue";
+});
+
+
