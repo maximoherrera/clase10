@@ -229,4 +229,14 @@ casilla4.addEventListener("mouseover", function() {
   this.style.backgroundColor = "blue";
 });
 
+//EJERCICIO 18
 
+function cambiarTamaño(div) {
+  if (div.style.width === "800px" || div.style.height === "70px") {
+    div.style.width = "250px";
+    div.style.height = "250px";
+  } else {
+    div.style.width = "800px";
+    div.style.height = "70px";
+  }
+}
