@@ -240,3 +240,24 @@ function cambiarTamaño(div) {
     div.style.height = "70px";
   }
 }
+
+// EJERCICIO 20
+
+var yt = document.getElementById("yt");
+yt.addEventListener("click", function(event) {
+  event.preventDefault();
+  console.log(yt.href);
+});
+
+// EJERCICIO 21
+
+var formulario = document.getElementById("form21");
+var botonEnviar = document.getElementById("enviar");
+var mensajeEnviado = document.getElementById("mensaje");
+
+formulario.addEventListener("submit", function(event) {
+  event.preventDefault();
+  mensajeEnviado.innerHTML = "Se envio el formulario.";
+});
+
+
